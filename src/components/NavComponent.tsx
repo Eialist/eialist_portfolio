@@ -1,5 +1,3 @@
-import React from "react";
-
 export const NavComponent = () => {
   return (
     <>
@@ -9,17 +7,24 @@ export const NavComponent = () => {
           height: "3.5em",
           display: "flex",
           justifyContent: "space-evenly",
-          background: "#f9f9f9",
+          background: "#f2f2f2",
           paddingTop: "1.2em",
-          textTransform: "uppercase"
+          textTransform: "uppercase",
         }}>
-        <a style={{ textDecoration: "none" }} href="">
+        <a
+          className="nav-btn"
+          href="">
           Phone
         </a>
-        <a style={{ textDecoration: "none" }} href="">
+        <a
+          className="nav-btn"
+          href="">
           Mail
         </a>
-        <a style={{ textDecoration: "none" }} href="">
+        <a
+          className="nav-btn"
+          href="https://github.com/Eialist"
+          target="_blank">
           Github
         </a>
       </nav>

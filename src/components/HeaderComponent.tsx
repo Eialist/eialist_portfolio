@@ -1,7 +1,11 @@
-import React from 'react'
+import hamburgerMenu from '../assets/hamburger.png';
+import { Link } from 'react-router-dom';
 
 export const HeaderComponent = () => {
   return (
-    <div>HeaderComponent</div>
+    <div className="header-div" style={{ display: "flex", justifyContent: "space-between", paddingTop: "4em", paddingBottom: "1.5em", padding: "4.5em 1em 1.2em 1em"}}>
+    <Link to={'/menu'}><img src={hamburgerMenu} alt="" style={{ width: "50px", opacity: "0.3", marginTop: "-.58em"}}/></Link>
+    <h1 style={{ fontFamily: "title", fontSize: "40px", fontWeight: "400"}}>Eialist</h1>
+    </div>
   )
 }

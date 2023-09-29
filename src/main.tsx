@@ -7,6 +7,7 @@ import { StartPage } from './pages/StartPage.tsx'
 import { CvPage } from './pages/CvPage.tsx'
 import { ProjectPage } from './pages/ProjectPage.tsx'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import { MenuPage } from './pages/MenuPage.tsx';
 
 const router = createBrowserRouter([
   {
@@ -16,7 +17,8 @@ const router = createBrowserRouter([
       {path: '/', element: <StartPage />},
       {path: '/projects', element: <ProjectPage />},
       {path: '/cv', element: <CvPage/>}, 
-      {path: '/application_letter', element: <ApplicationPage />}
+      {path: '/application_letter', element: <ApplicationPage />},
+      {path: '/menu', element: <MenuPage />}
     ]
   }
 ])

@@ -1,24 +1,27 @@
-import { useState } from 'react'
-import { Outlet } from 'react-router-dom'
-import { NavComponent } from './components/NavComponent'
-import './main.css';
+// import { useState } from "react";
+import { Outlet } from "react-router-dom";
+import { NavComponent } from "./components/NavComponent";
+import "./main.css";
+import { HeaderComponent } from "./components/HeaderComponent";
 function App() {
-  const [count, setCount] = useState(0)
+  // const [count, setCount] = useState(0);
 
   return (
-    <div style={{ height: "100vh", width: "100vw", margin: "0", padding: 0, background: "pink", position: "relative"}}>
+    <div className="container">
+      <HeaderComponent />
       <div>
         <Outlet />
       </div>
-        <button onClick={() => setCount((count) => count * 5)}>
-          count is {count}
-        </button>
-        <div style={{ position: "fixed", bottom: 0, width: "100%"}}>
+      <div className="bottom-nav-placement">
         <NavComponent />
-        </div>
+      </div>
     </div>
-    
-  )
+  );
 }
 
-export default App
+export default App;
+
+
+{/* <button onClick={() => setCount((count) => count +1)}>
+        count is {count}
+      </button> */}
