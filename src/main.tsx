@@ -1,13 +1,13 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.tsx'
+import * as React from 'react'
+import * as ReactDOM from 'react-dom/client'
+import App from './App'
 import './main.css';
-import { ApplicationPage } from './pages/ApplicationPage.tsx'
-import { StartPage } from './pages/StartPage.tsx'
-import { CvPage } from './pages/CvPage.tsx'
-import { ProjectPage } from './pages/ProjectPage.tsx'
+import { ApplicationPage } from './pages/ApplicationPage'
+import { StartPage } from './pages/StartPage'
+import { CvPage } from './pages/CvPage'
+import { ProjectPage } from './pages/ProjectPage'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
-import { MenuPage } from './pages/MenuPage.tsx';
+import { MenuPage } from './pages/MenuPage';
 
 const router = createBrowserRouter([
   {
