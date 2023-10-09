@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "courseName": "HTML & CSS",
+    "imgSrc": "/images/images/bruno-figueiredo-uoteo7uO5OI-unsplash.jpg"
+  },
+  {
+    "id": 2,
+    "courseName": "Javascript1",
+    "imgSrc": "../../assets/js-code.jpg"
+  },
+  {
+    "id": 3,
+    "courseName": "Agila metoder",
+    "imgSrc": "../assets/js-code.jpg"
+  },
+  {
+    "id": 4,
+    "courseName": "Javascript2",
+    "imgSrc": "../assets/js-code.jpg"
+  },
+  {
+    "id": 5,
+    "courseName": "UXdesign",
+    "imgSrc": "../assets/js-code.jpg"
+  },
+  {
+    "id": 6,
+    "courseName": "Backendutveckling",
+    "imgSrc": "../assets/js-code.jpg"
+  },
+  {
+    "id": 7,
+    "courseName": "Javascript3",
+    "imgSrc": "../assets/js-code.jpg"
+  },
+  {
+    "id": 8,
+    "courseName": "Typescript",
+    "imgSrc": "../assets/js-code.jpg"
+  },
+  {
+    "id": 9,
+    "courseName": "Frontend Projekt",
+    "imgSrc": "../assets/js-code.jpg"
+  }
+]

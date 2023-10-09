@@ -7,8 +7,9 @@ function App() {
   // const [count, setCount] = useState(0);
 
   return (
-    <div className="container">
+    <>
       <HeaderComponent />
+      <div className="container">
       <div>
         <Outlet />
       </div>
@@ -16,6 +17,7 @@ function App() {
         <NavComponent />
       </div>
     </div>
+    </>
   );
 }
 

@@ -6,6 +6,14 @@
   font-family: title;
   src: url("./assets/LibreBarcode39Text-Regular.ttf");
 }
+@font-face {
+  font-family: eiko;
+  src: url("./assets/PPEiko-Medium.otf");
+}
+@font-face {
+  font-family: eiko-light;
+  src: url("./assets/PPEiko-Thin.otf");
+}
 
 * {
     box-sizing: border-box;
@@ -16,13 +24,18 @@
   }
 
 .container {
-  height: 100vh;
+  height: 100%;
   width: 100vw;
-  margin: 0;
+  margin: 0 auto;
   padding: 2em; 
   position: relative;
+  margin-bottom: 3em; 
+  margin-top: 3em; 
 }
 
+.header-div {
+  margin-top: 4.5em;
+}
 .bottom-nav-placement {
   position: fixed; 
   bottom: 0; 
@@ -36,7 +49,7 @@
   text-decoration: none;
   font-family: body;
   color: black;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .nav-btn:hover {
@@ -44,73 +57,135 @@
 }
 
 .profile-picture {
-  margin: 1em;
+  margin: 1em 0em 0em 0em;
   width: 90%; 
-  height: 250px;
+  height: 198px;
   overflow: hidden;
   object-fit: cover;
   border: 2px solid black; 
 }
 
+.project-picture {
+  border: 2px solid black; 
+  margin: 1em 0em 1em 0em;
+  width: 90%; 
+  height: 117px;
+  overflow: hidden;
+  object-fit: cover;
+}
+
 .about-me-text, 
-.project-text {
+.project-text, 
+.body-text {
   text-transform: uppercase;
   writing-mode: vertical-rl;
   text-decoration: none;
-  position: absolute;
   font-family: body;
+  font-size: 1.2em;
   font-weight: 400;
   color: black;
 }
 
+.info-text {
+  font-family: eiko-light;
+  font-size: 2em;
+  font-style: italic;
+}
+
 .about-me-text {
-  top: 45%; 
+  top: 32%; 
   right: -2%; 
 }
 
 .project-text{
   rotate: 180deg;
-  top: 45%; 
+  top: 37%; 
   left: -2%; 
 }
 
+.pos-abs {
+  position: absolute;
+}
 .pos-rel {
   position: relative;
   width: 100%;
 }
 
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
 
-@media screen and (min-width:1000px) {
+.invi {
+  display: none;
+}
+
+
+@media screen and (max-width: 500px){
+  .desktop-only {
+    display: none !important;
+  }
+}
+
+
+@media screen and (min-width:1100px) {
+    .container {
+      margin-top: 0em;
+      height: 100vh; 
+      width: 70%; 
+      margin-bottom: -2em;
+      height: 100%; 
+    }
+
+    .header-div {
+      margin-top: 0;
+    }
+
     .profile-picture {
-      height: 600px;
-      width: 80%;
-      margin: auto; 
-      display: flex;
+      min-width: 45%;
+      height: 96.7%;
+      flex-grow: 1; 
+    }
+
+    .flex-start {
+      justify-content: flex-start;
+    }
+    .flex-col {
+      flex-direction: column;
     }
 
     .code-img {
-      height: 250px; 
+      min-width: 450px;
+      max-height: 150px; 
+      overflow: hidden;
     }
 
     .flex {
       display: flex;
+      gap: 2em;
     }
 
-   .header-div {
-      margin-top: -4em;
-      margin-bottom: 2em; 
-   }
-
    .about-me-text {
-    top: 50%; 
-    left: 0; 
+    top: 47%; 
+    left: -10%; 
     rotate: 180deg;
   }
   
   .project-text {
-    top: 50%; 
+    top: 140%; 
     rotate: 360deg;
-    right: 0; 
+    right: -5%; 
+    text-align: center;
+    z-index: 100;
   }
+
+  .invi {
+    display: flex; 
+  }
+
+  .mobile-only {
+    display: none;
+  }
+  
 }
 
